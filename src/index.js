@@ -1,10 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Behavior from './Behavior';
+
+import * as serviceWorker from './serviceWorker';
+//
+// const numbers = [1, 2, 3 , 4, 5];
+// ReactDOM.render(<List numbers = {numbers} />, document.getElementById('root'));
+
+ReactDOM.render(
+    <Behavior />,
+    document.getElementById('root')
+);
+
+// setInterval( () => {
+//     ReactDOM.render(<Tick />, document.getElementById('root'));
+// }, 1000);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

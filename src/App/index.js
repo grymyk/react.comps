@@ -2,9 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Welcome from "../Welcome";
+
 function App() {
   return (
-    <div className="App">
+    <div>
+        <Welcome name = "Sarah" />
+        <Welcome name = "Michelle" />
+        <Welcome name = "Gellar" />
+    </div>
+  );
+}
+
+export default App;
+
+{/*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,8 +31,4 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
-}
-
-export default App;
+    </div>*/}
