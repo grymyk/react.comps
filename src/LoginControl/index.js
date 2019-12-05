@@ -1,6 +1,6 @@
 import React from 'react'
 import {Login, Logout} from "./Btn";
-import Greeting from "../Greeting";
+import Greeting from "./Greeting";
 
 export default class LoginControl extends React.Component {
     constructor(props) {
