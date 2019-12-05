@@ -1,26 +1,26 @@
-## My Base React Components Collection
+## Base React Components
 
 This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
 
-Behavior
+Behavior:
 [choosing-the-type-at-runtime](https://reactjs.org/docs/jsx-in-depth.html#choosing-the-type-at-runtime)
 
-Calculator
+Calculator:
 [lifting-state-up](https://reactjs.org/docs/lifting-state-up.html)
 
-Clock
+Clock:
 [state-and-lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 
-List
+List:
 [lists-and-keys](https://reactjs.org/docs/lists-and-keys.html)
 
-MultipleInput
+MultipleInput:
 [forms](https://reactjs.org/docs/forms.html)
 
-TodoList
+TodoList:
 [lists-and-keys](https://reactjs.org/docs/lists-and-keys.html)
 
-Toggle
+Toggle:
 [handling-events](https://reactjs.org/docs/handling-events.html)
 
