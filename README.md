@@ -24,11 +24,11 @@ TodoList:
 Toggle:
 [handling-events](https://reactjs.org/docs/handling-events.html)
 
-## Source
+##Source
 - Redux
   - [introduction-to-redux](https://www.smashingmagazine.com/2016/06/an-introduction-to-redux/)
 
-- Hooks
+- Hook
   - [valentinog.com/hooks](https://www.valentinog.com/blog/hooks/)
   - [react-hooks-api-guide](https://www.smashingmagazine.com/2020/04/react-hooks-api-guide/)
   - [client-side-graphql-apollo-client-react-apps](https://www.smashingmagazine.com/2020/07/client-side-graphql-apollo-client-react-apps/)
