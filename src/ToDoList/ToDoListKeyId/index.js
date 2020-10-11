@@ -2,18 +2,16 @@ import React from 'react'
 
 import helpers from '../helpers'
 
-console.log(helpers)
-
 const ToDo = props => (
     <tr>
         <td>
             <label>{props.id}</label>
         </td>
         <td>
-            <input />
+            {/*<input />*/}
         </td>
         <td>
-            <label>{props.createdAt.toTimeString()}</label>
+            {/*<label>{props.createdAt.toTimeString()}</label>*/}
         </td>
     </tr>
 );
@@ -33,17 +31,17 @@ const DiffAdd = (props) => (
 export default class ToDoListKeyId extends React.Component {
     constructor() {
         super();
+
         const date = new Date();
         const toDoCounter = 1;
         const timeDiffAdd = 0;
 
         this.state = {
-            list: [
-                {
+            list: [{
                     id: toDoCounter,
                     createdAt: date,
-                },
-            ],
+                },],
+
             diffAdd: timeDiffAdd,
             toDoCounter: toDoCounter,
         };
@@ -53,6 +51,7 @@ export default class ToDoListKeyId extends React.Component {
         const sortedList = this.state.list.sort((a, b) => {
             return a.createdAt - b.createdAt;
         });
+
         this.setState({
             list: [...sortedList],
         });
@@ -62,6 +61,7 @@ export default class ToDoListKeyId extends React.Component {
         const sortedList = this.state.list.sort((a, b) => {
             return b.createdAt - a.createdAt;
         });
+
         this.setState({
             list: [...sortedList],
         });
@@ -70,10 +70,12 @@ export default class ToDoListKeyId extends React.Component {
     addToEnd() {
         const date = new Date();
         const nextId = this.state.toDoCounter + 1;
+
         const newList = [
             ...this.state.list,
             {id: nextId, createdAt: date},
         ];
+
         this.setState({
             list: newList,
             toDoCounter: nextId,
@@ -86,8 +88,7 @@ export default class ToDoListKeyId extends React.Component {
 
         const nextId = this.state.toDoCounter + 1;
 
-        const newList = [
-            {
+        const newList = [{
                 id: nextId,
                 createdAt: date
             },
@@ -104,12 +105,12 @@ export default class ToDoListKeyId extends React.Component {
     render() {
         return (
             <div>
-                <code>key=id</code>
+                {/*<code>key=id</code>*/}
                 <div>
                     <button onClick={this.addToStart.bind(this)}>
                         Add New to Start
                     </button>
-                    <button onClick={this.addToEnd.bind(this)}>
+                    {/*<button onClick={this.addToEnd.bind(this)}>
                         Add New to End
                     </button>
                     <button onClick={this.sortByEarliest.bind(this)}>
@@ -117,24 +118,24 @@ export default class ToDoListKeyId extends React.Component {
                     </button>
                     <button onClick={this.sortByLatest.bind(this)}>
                         Sort by Latest
-                    </button>
+                    </button>*/}
                 </div>
                 <table>
-                    <thead>
+                    {/*<thead>
                         <tr>
                             <th>ID</th>
                             <th />
                             <th>created at</th>
                         </tr>
-                    </thead>
+                    </thead>*/}
                     <tbody>
                         {this.state.list.map((todo, index) => (
                             <ToDo key={todo.id} {...todo} />
                         ))}
                     </tbody>
-                    <tfoot>
+                   {/* <tfoot>
                         <DiffAdd time = {this.state.diffAdd} />
-                    </tfoot>
+                    </tfoot>*/}
                 </table>
             </div>
         );
